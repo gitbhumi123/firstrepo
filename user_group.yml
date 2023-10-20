@@ -1,0 +1,16 @@
+---
+  - hosts: localhost
+    tasks:
+      - name: Create User
+        user:
+          name: bhumi
+          state: present
+        tags:
+          - add
+      - name: Delete User
+        user:
+          name: bhumi
+          state: absent
+          remove: yes
+        tags:
+          - delete
