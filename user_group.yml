@@ -7,10 +7,10 @@
           state: present
         tags:
           - add
-      - name: Delete User
-        user:
-          name: bhumi
-          state: absent
-          remove: yes
-        tags:
-          - delete
+#      - name: Delete User
+ #       user:
+  #        name: bhumi
+   #       state: absent
+    #      remove: yes
+     #   tags:
+      #    - delete
